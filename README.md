@@ -1,2 +1,2 @@
-# -.github.io
+Timilogy.github.io
 сайт для гуапа
