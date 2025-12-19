@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Тимилогия">
+    <title>Тимилогия</title>
+    <!-- Подключение Font Awesome для иконок -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Подключение шрифтов Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/banknot9230.png">
+</head>
+<body>
+    <!-- Навигационное меню -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="#home" class="nav__logo">Разделы</a>
+            <ul class="nav__menu">
+                <li><a href="#home" class="nav__link">Главная</a></li>
+                <li><a href="#about" class="nav__link">Карточка Тимилога</a></li>
+                <li><a href="#portfolio" class="nav__link">Заслуги</a></li>
+                <li><a href="#contact" class="nav__link">Контакты</a></li>
+            </ul>
+            <button class="nav__toggle" aria-label="Меню">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Главный раздел (Hero) -->
+        <section id="home" class="hero">
+            <div class="container">
+                <img src="images/Pam_I_Bam.png" alt="Pam I Bam" loading="lazy">
+                <h1 class="hero__title">Здравствуйте, я <span class="text-highlight">Асипков Никита</span></h1>
+                <p class="hero__subtitle">Тимилог высшей степени</p>
+                <a href="#portfolio" class="btn">Вклад в Тимилогию</a>
+            </div>
+        </section>
+
+        <!-- Раздел "Обо мне" -->
+        <section id="about" class="section about">
+            <div class="container">
+                <h2 class="section__title">Обо мне</h2>
+                <div class="about__content">
+                    <div class="about__text">
+                        <p>Более трёх лет я и мои коллеги разрабатываем новую науку под названием Тимилогия</p>
+                        <p>Перед нами стоят серьёные задачи и преграды, которые мы успешно преодолеваем на пути становления Тимилогии</p>
+                        <p>Я - Тимилог высшей степени, и на основе этого я могу делиться полной информацией по тому, какие векторы движения выбирает Тимилогия, её потенциал как инновационной науки и научной базе</p>
+                    </div>
+                    <div class="about__image">
+                        <!-- Оригинальное фото (замените на свое) -->
+                        <img src="images/12.png" alt="Фотография автора" loading="lazy">
+                        <!-- Адаптивная SVG-иконка (логотип/графика) -->
+                        <div class="about__graphic">
+                            <svg class="graphic-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="50" cy="50" r="45" stroke="#4a6fa5" stroke-width="3" fill="none"/>
+                                <path d="M30,50 L70,50 M50,30 L50,70" stroke="#4a6fa5" stroke-width="3"/>
+                                <circle cx="50" cy="50" r="10" fill="#4a6fa5"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Галерея портфолио -->
+        <section id="portfolio" class="section portfolio">
+            <div class="container">
+                <h2 class="section__title">Мой вклад</h2>
+                <div class="gallery">
+                    <div class="gallery__item">
+                        <img src="images/tre.jpeg" alt="основной треугольник Тимилогии" loading="lazy">
+                        <div class="gallery__overlay">
+                            <h3>Основной треугольник Тимилогии"</h3>
+                            <p>Фундаментальный закон</p>
+                        </div>
+                    </div>
+                    <div class="gallery__item">
+                        <img src="images/Pam_I_Bam.png" alt="Pam&Bam University" loading="lazy">
+                        <div class="gallery__overlay">
+                            <h3>Pam&Bam University</h3>
+                            <p>Ректор и Профессор</p>
+                        </div>
+                    </div>
+                    <div class="gallery__item">
+                        <img src="images/vsh.png" alt="Тимиигры" loading="lazy">
+                        <div class="gallery__overlay">
+                            <h3>Тимиигры</h3>
+                            <p>На практике доказал теорию Тимиигр</p>
+                        </div>
+                    </div>
+                    <div class="gallery__item">
+                        <img src="images/banknot9230.png" alt="Партия Тимилогов" loading="lazy">
+                        <div class="gallery__overlay">
+                            <h3>Партия Тимилогов</h3>
+                            <p>Почётный член партии</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Форма обратной связи -->
+        <section id="contact" class="section contact">
+            <div class="container">
+                <h2 class="section__title">Стать Тимилогом</h2>
+                <form id="contactForm" class="form" novalidate>
+                    <div class="form__group">
+                        <label for="name">Имя *</label>
+                        <input type="text" id="name" name="name" required placeholder="Ваше имя">
+                        <span class="form__error" id="nameError"></span>
+                    </div>
+                    <div class="form__group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required placeholder="example@mail.ru">
+                        <span class="form__error" id="emailError"></span>
+                    </div>
+                    <div class="form__group">
+                        <label for="message">Сообщение *</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Ваше сообщение..."></textarea>
+                        <span class="form__error" id="messageError"></span>
+                    </div>
+                    <button type="submit" class="btn btn--submit">Отправить</button>
+                </form>
+                <div class="contact__info">
+                    <p><i class="fas fa-phone"></i> Телефон: <a href="tel:+78123152156">+7 (812) 315-21-56</a></p>
+                    <p><i class="fas fa-envelope"></i> Email: <a href="mailto:info@banknot.ru?subject=Вопрос с сайта">info@banknot.ru</a></p>
+                    <p><small>Прикоснись к Тимилогии</small></p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
